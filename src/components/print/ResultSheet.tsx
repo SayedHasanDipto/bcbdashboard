@@ -1,6 +1,8 @@
 // src/components/print/ResultSheet.tsx
 import { Student, Subject, MarksMap, ExamType, EXAM_LABELS } from '@/types';
 import { getGrade, calcGPA, gradeColorInline } from '@/lib/grading';
+import Image from 'next/image';
+import logo from '../../logo.png';
 
 interface Props {
   student: Student;
@@ -51,7 +53,13 @@ export default function ResultSheet({ student, subjects, marks, examType, id }: 
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: '10px', borderBottom: '2px solid #0f4527', marginBottom: '12px' }}>
         <div style={{ width: 56, height: 56, background: '#0f4527', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '24px' }}>
-          🏫
+          <Image
+            src={logo}
+            alt="BCB Ideal School Logo"
+            width={80}
+            height={80}
+            className="object-contain"
+          />
         </div>
         <div style={{ textAlign: 'center', flex: 1 }}>
           <div style={{ fontSize: '20px', fontWeight: 700, color: '#0f4527', fontFamily: 'Noto Serif Bengali, serif' }}>

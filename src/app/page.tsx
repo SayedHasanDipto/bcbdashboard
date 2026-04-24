@@ -6,6 +6,8 @@ import { useAuth } from '@/lib/auth-context';
 import { getTeachers, initializeFirebaseData } from '@/lib/db';
 import { Teacher } from '@/types';
 import toast from 'react-hot-toast';
+import Image from 'next/image';
+import logo from '../logo.png';
 
 export default function LoginPage() {
   const { user, login } = useAuth();
@@ -81,7 +83,14 @@ export default function LoginPage() {
             className="w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4 shadow-2xl"
             style={{ background: '#c9a227' }}
           >
-            🏫
+            <Image
+              src={logo}
+              alt="BCB Ideal School Logo"
+              width={80}
+              height={80}
+              className="object-contain"
+              style={{ borderRadius: '50%' }}
+            />
           </div>
           <h1
             className="text-2xl font-bold text-white mb-1"

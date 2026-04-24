@@ -4,6 +4,8 @@ import { useAuth } from '@/lib/auth-context';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 import clsx from 'clsx';
+import Image from 'next/image';
+import logo from '../../logo.png';
 
 const navItems = [
   { href: '/dashboard', label: '📊 ড্যাশবোর্ড', adminOnly: false },
@@ -38,7 +40,14 @@ export default function Header() {
               className="w-12 h-12 rounded-full flex items-center justify-center text-2xl flex-shrink-0 shadow-md"
               style={{ background: '#c9a227' }}
             >
-              🏫
+              <Image
+                src={logo}
+                alt="BCB Ideal School Logo"
+                width={80}
+                height={80}
+                className="object-contain"
+                style={{ borderRadius: '50%' }}
+              />
             </div>
             <div className="text-white">
               <h1
