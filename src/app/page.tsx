@@ -142,9 +142,9 @@ export default function LoginPage() {
             </button>
           </div>
 
-          <p className="text-center mt-5 text-xs text-gray-400">
+          {/* <p className="text-center mt-5 text-xs text-gray-400">
             ডেমো পাসওয়ার্ড: <strong className="text-gray-600">1234</strong>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
