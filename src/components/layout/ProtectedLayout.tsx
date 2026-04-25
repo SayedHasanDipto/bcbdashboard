@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth-context';
 import Header from './Header';
+import Footer from './Footer';
 import { Spinner } from '@/components/ui';
 
 export default function ProtectedLayout({ children }: { children: React.ReactNode }) {
@@ -12,7 +13,6 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
 
   useEffect(() => {
     if (user === null) {
-      // small delay to let session storage load
       const t = setTimeout(() => {
         if (!sessionStorage.getItem('bcb_user')) router.replace('/');
       }, 100);
@@ -29,11 +29,12 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
   }
 
   return (
-    <div className="min-h-screen" style={{ background: '#f4f7f0' }}>
+    <div className="min-h-screen flex flex-col" style={{ background: '#f4f7f0' }}>
       <Header />
-      <main className="max-w-7xl mx-auto px-4 py-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 py-6">
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
