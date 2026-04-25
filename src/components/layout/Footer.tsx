@@ -45,7 +45,7 @@ export default function Footer() {
             >
               🔗 দ্রুত লিঙ্ক
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm max-sm:grid max-sm:grid-cols-2 max-sm:items-center max-sm:justify-center">
               {[
                 { href: '/dashboard', label: '📊 ড্যাশবোর্ড' },
                 { href: '/enter-marks', label: '✏️ নম্বর প্রদান' },
@@ -108,6 +108,9 @@ export default function Footer() {
         >
           <p className="text-white/50">
             © {year} বি.সি.বি আইডিয়াল স্কুল। সর্বস্বত্ব সংরক্ষিত।
+          </p>
+          <p className="text-white/50">
+            <a href="https://www.facebook.com/SayedHasanDipto25" target="_blank">Made by SayedHasanDipto</a>
           </p>
           <p className="text-white/40">
             Powered by{' '}
