@@ -110,7 +110,7 @@ export default function Footer() {
             © {year} বি.সি.বি আইডিয়াল স্কুল। সর্বস্বত্ব সংরক্ষিত।
           </p>
           <p className="text-white/50">
-            <a href="https://www.facebook.com/SayedHasanDipto25" target="_blank">Made by SayedHasanDipto</a>
+            <a href="https://www.facebook.com/SayedHasanDipto25" target="_blank">Developed with ❤️ by Sayed Hasan Dipto</a>
           </p>
           <p className="text-white/40">
             Powered by{' '}

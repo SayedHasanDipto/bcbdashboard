@@ -1,176 +1,116 @@
-# বি.সি.বি আইডিয়াল স্কুল — ফলাফল ব্যবস্থাপনা সিস্টেম
+# 🏫 বি.সি.বি আইডিয়াল স্কুল
+## ফলাফল ব্যবস্থাপনা সিস্টেম
+![Login](https://i.ibb.co.com/pv5qVrR5/image.png)
+![Dashboard](https://i.ibb.co.com/wh4BvrkD/image.png)
+![Result](https://i.ibb.co.com/C5JJxz9m/image.png)
+![Institute Reulult](https://i.ibb.co.com/KpYsZhqW/image.png)
+![Indivisual Reulult](https://i.ibb.co.com/ZtD6w7k/image.png)
 
-## 🚀 ফিচারসমূহ
-
-- ✅ Firebase Realtime Database (অনলাইন, রিয়েলটাইম)
-- ✅ শিক্ষক লগইন সিস্টেম (বিষয়ভিত্তিক অনুমতি)
-- ✅ নম্বর প্রদান — MCQ, CQ, ব্যবহারিক, শ্রেণি কার্য
-- ✅ বার্ষিক / অর্ধবার্ষিক / সাময়িক পরীক্ষা
-- ✅ ক্লাসভিত্তিক সামগ্রিক ফলাফল (মেধা তালিকা)
-- ✅ একক শিক্ষার্থীর রেজাল্ট শিট
-- ✅ প্রিন্ট (ব্রাউজার প্রিন্ট + নতুন উইন্ডো প্রিন্ট)
-- ✅ GPA ও গ্রেড স্বয়ংক্রিয় হিসাব
-- ✅ অ্যাডমিন প্যানেল — শিক্ষার্থী / শিক্ষক / বিষয় / ক্লাস ম্যানেজমেন্ট
-- ✅ Vercel Deploy রেডি
+**বকশীগঞ্জ পশ্চিমপাড়া, মেরুরচর রোড, জামালপুর**
 
 ---
 
-## 📦 ধাপ ১: Firebase প্রজেক্ট তৈরি করুন
+*Developed by **Sayed Hasan Dipto***
 
-1. **[firebase.google.com](https://firebase.google.com)** → "Get Started" → Google অ্যাকাউন্টে লগইন
-
-2. **নতুন প্রজেক্ট তৈরি:**
-   - "Add project" ক্লিক করুন
-   - প্রজেক্ট নাম দিন: `bcb-school`
-   - Google Analytics: অফ করতে পারেন
-   - "Create project" ক্লিক করুন
-
-3. **Realtime Database চালু করুন:**
-   - বাম মেনু → "Build" → "Realtime Database"
-   - "Create Database" ক্লিক করুন
-   - Location: `asia-south1 (Mumbai)` বা `us-central1`
-   - Security rules: **"Start in test mode"** সিলেক্ট করুন ✅
-   - "Enable" ক্লিক করুন
-
-4. **Web App যোগ করুন:**
-   - Project Overview → `</>` (Web) আইকন ক্লিক করুন
-   - App nickname: `bcb-web`
-   - "Register app" ক্লিক করুন
-   - **firebaseConfig কপি করুন** (এটা পরে লাগবে)
+</div>
 
 ---
 
-## ⚙️ ধাপ ২: প্রজেক্ট সেটআপ
+## 📖 সিস্টেম পরিচিতি
 
-### `.env.local` ফাইল তৈরি করুন
-
-`.env.local.example` ফাইলটি কপি করে `.env.local` নামে সেভ করুন:
-
-```bash
-cp .env.local.example .env.local
-```
-
-তারপর `.env.local` খুলে Firebase config এর মান বসান:
-
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSy...
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=bcb-school-xxxx.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_DATABASE_URL=https://bcb-school-xxxx-default-rtdb.asia-southeast1.firebasedatabase.app
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=bcb-school-xxxx
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=bcb-school-xxxx.appspot.com
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=123456789
-NEXT_PUBLIC_FIREBASE_APP_ID=1:123456789:web:abcdef
-```
-
-### ডিপেন্ডেন্সি ইন্সটল করুন
-
-```bash
-npm install
-```
-
-### লোকাল রান করুন
-
-```bash
-npm run dev
-```
-
-ব্রাউজারে যান: [http://localhost:3000](http://localhost:3000)
+এটি বি.সি.বি আইডিয়াল স্কুলের জন্য তৈরি একটি **সম্পূর্ণ ডিজিটাল ফলাফল ব্যবস্থাপনা সিস্টেম**। এই সিস্টেমের মাধ্যমে শিক্ষকরা অনলাইনে নম্বর প্রদান করতে পারেন এবং যেকোনো ডিভাইস থেকে রিয়েলটাইমে ফলাফল দেখা যায়।
 
 ---
 
-## 🌐 ধাপ ৩: Vercel এ Deploy করুন
+## ✨ মূল ফিচারসমূহ
 
-### পদ্ধতি ১ — GitHub থেকে (সবচেয়ে সহজ)
+### 🔐 নিরাপদ লগইন সিস্টেম
+- প্রতিটি শিক্ষকের আলাদা অ্যাকাউন্ট ও পাসওয়ার্ড
+- শিক্ষক শুধুমাত্র তার নিজের বিষয়ের নম্বর দিতে পারবেন
+- প্রধান শিক্ষক (Admin) সব কিছু নিয়ন্ত্রণ করতে পারবেন
 
-1. **GitHub এ Push করুন:**
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/আপনার-username/bcb-school.git
-git push -u origin main
-```
+### ✏️ নম্বর প্রদান
+- MCQ, CQ, ব্যবহারিক ও শ্রেণি কার্যের আলাদা নম্বর
+- ৪ ধরনের পরীক্ষা: বার্ষিক, অর্ধবার্ষিক, ১ম সাময়িক, ২য় সাময়িক
+- নম্বর দেওয়ার সাথে সাথে গ্রেড দেখা যায়
 
-2. **[vercel.com](https://vercel.com)** → "New Project" → GitHub রিপো import করুন
+### 📋 ফলাফল দেখুন
+- ক্লাসভিত্তিক সামগ্রিক ফলাফল ও মেধা তালিকা
+- একক শিক্ষার্থীর বিস্তারিত রেজাল্ট শিট
+- GPA স্বয়ংক্রিয় হিসাব (বাংলাদেশ শিক্ষা বোর্ড অনুযায়ী)
 
-3. **Environment Variables যোগ করুন:**
-   - Vercel Dashboard → Settings → Environment Variables
-   - `.env.local` এর সব variable গুলো এখানে যোগ করুন
+### 🖨️ প্রিন্ট সুবিধা
+- একক শিক্ষার্থীর রেজাল্ট শিট প্রিন্ট (A4 ফরম্যাট)
+- পুরো ক্লাসের ফলাফল তালিকা প্রিন্ট
 
-4. **Deploy!** → Vercel স্বয়ংক্রিয়ভাবে build করবে
+### ⚙️ অ্যাডমিন প্যানেল
+- শিক্ষার্থী যোগ / মুছুন
+- শিক্ষক যোগ / সম্পাদনা / বিষয় assign
+- বিষয় ও ক্লাস ব্যবস্থাপনা
 
-### পদ্ধতি ২ — Vercel CLI
-
-```bash
-npm i -g vercel
-vercel login
-vercel --prod
-```
-
-Deploy করার সময় environment variables সেট করতে বলবে।
-
----
-
-## 🔒 Firebase Security Rules (Production এর জন্য)
-
-Firebase Console → Realtime Database → Rules এ নিচের rules বসান:
-
-```json
-{
-  "rules": {
-    "bcb": {
-      ".read": true,
-      ".write": true
-    }
-  }
-}
-```
-
-> ⚠️ এটি টেস্ট মোড। Production এ proper authentication rules ব্যবহার করুন।
+### 🔥 Firebase Realtime Database
+- সব ডেটা অনলাইনে সংরক্ষিত
+- যেকোনো ডিভাইস থেকে রিয়েলটাইম অ্যাক্সেস
+- ইন্টারনেট সংযোগ থাকলেই ব্যবহার করা যাবে
 
 ---
 
-## 👤 ডিফল্ট লগইন
-
-| শিক্ষক | পাসওয়ার্ড |
-|--------|-----------|
-| প্রধান শিক্ষক (Admin) | 1234 |
-| মোঃ রহিম উদ্দিন | 1234 |
-| মোসাম্মৎ খাদিজা বেগম | 1234 |
-| সব শিক্ষক | 1234 |
-
----
-
-## 📁 প্রজেক্ট স্ট্রাকচার
+## 🏗️ প্রজেক্ট স্ট্রাকচার
 
 ```
 src/
 ├── app/
-│   ├── page.tsx          # লগইন পেজ
-│   ├── dashboard/        # ড্যাশবোর্ড
-│   ├── enter-marks/      # নম্বর প্রদান
-│   ├── results/          # ফলাফল দেখুন
-│   └── admin/            # অ্যাডমিন প্যানেল
+│   ├── page.tsx            # লগইন পেজ
+│   ├── dashboard/          # ড্যাশবোর্ড
+│   ├── enter-marks/        # নম্বর প্রদান
+│   ├── results/            # ফলাফল দেখুন
+│   └── admin/              # অ্যাডমিন প্যানেল
 ├── components/
-│   ├── layout/           # Header, ProtectedLayout
-│   ├── print/            # ResultSheet
-│   └── ui/               # Btn, Card, Select...
+│   ├── layout/             # Header, Footer, ProtectedLayout
+│   ├── print/              # ResultSheet (প্রিন্ট)
+│   └── ui/                 # পুনর্ব্যবহারযোগ্য UI কম্পোনেন্ট
 ├── lib/
-│   ├── firebase.ts       # Firebase init
-│   ├── db.ts             # Database operations
-│   ├── grading.ts        # GPA & Grade calculation
-│   └── auth-context.tsx  # Auth state
+│   ├── firebase.ts         # Firebase সংযোগ
+│   ├── db.ts               # ডেটাবেস অপারেশন
+│   ├── grading.ts          # GPA ও গ্রেড হিসাব
+│   └── auth-context.tsx    # Auth State
 └── types/
-    └── index.ts          # TypeScript types
+    └── index.ts            # TypeScript টাইপ
 ```
 
 ---
 
 ## 🛠️ টেকনোলজি স্ট্যাক
 
-- **Framework:** Next.js 14 (App Router)
-- **Database:** Firebase Realtime Database
-- **Styling:** Tailwind CSS
-- **Language:** TypeScript
-- **Fonts:** Hind Siliguri + Noto Serif Bengali
-- **Deploy:** Vercel
+| প্রযুক্তি | ব্যবহার |
+|-----------|---------|
+| Next.js 14 (App Router) | Frontend Framework |
+| Firebase Realtime Database | অনলাইন ডেটাবেস |
+| TypeScript | টাইপ-সেফ কোড |
+| Tailwind CSS | স্টাইলিং |
+| Vercel | Deployment |
+
+---
+
+## 🚀 Deployment
+
+এই প্রজেক্টটি **Vercel** এ deploy করা হয়েছে।
+
+---
+
+## ⚠️ গুরুত্বপূর্ণ নোট
+
+এটি একটি **প্রাইভেট স্কুল ম্যানেজমেন্ট সিস্টেম**।
+- এই সিস্টেমের অ্যাক্সেস শুধুমাত্র অনুমোদিত শিক্ষক ও কর্মকর্তাদের জন্য
+- অননুমোদিত ব্যবহার সম্পূর্ণ নিষিদ্ধ
+- যেকোনো সমস্যায় সিস্টেম অ্যাডমিনের সাথে যোগাযোগ করুন
+
+---
+
+<div align="center">
+
+**© 2025 বি.সি.বি আইডিয়াল স্কুল**
+
+Developed with ❤️ by **Sayed Hasan Dipto**
+
+</div>

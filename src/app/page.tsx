@@ -152,7 +152,7 @@ export default function LoginPage() {
           </div>
 
           <p className="text-center mt-5 text-xs text-gray-600 font-semibold">
-            <a href="https://www.facebook.com/SayedHasanDipto25" target='_blank'>Made by SayedHasanDipto</a>
+            <a href="https://www.facebook.com/SayedHasanDipto25" target='_blank'>Developed with ❤️ by Sayed Hasan Dipto</a>
           </p>
         </div>
       </div>
