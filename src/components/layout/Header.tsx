@@ -33,7 +33,7 @@ export default function Header() {
           background: 'linear-gradient(135deg, #0f4527 0%, #1a6b3c 60%, #2d9659 100%)',
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center max-sm:flex-col justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-3 flex-shrink-0">
             <div
@@ -61,7 +61,7 @@ export default function Header() {
           </div>
 
           {/* Nav */}
-          <nav className="flex items-center gap-2 flex-wrap">
+          <nav className="flex items-center gap-2 flex-wrap justify-center">
             <span
               className="px-3 py-1 rounded-full text-xs font-bold mr-1"
               style={{ background: '#c9a227', color: '#0f4527' }}
