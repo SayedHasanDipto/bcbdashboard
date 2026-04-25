@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 export const metadata: Metadata = {
   title: 'বি.সি.বি আইডিয়াল স্কুল - ফলাফল ব্যবস্থাপনা',
   description: 'বি.সি.বি আইডিয়াল স্কুল, বকশীগঞ্জ পশ্চিমপাড়া, মেরুরচর রোড, জামালপুর',
-  icons: { icon: '/public/favicon.ico', apple: '/public/favicon.ico' },
+  icons: { icon: '/favicon.ico', apple: '/favicon.ico' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
