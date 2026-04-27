@@ -160,13 +160,12 @@ export default function ResultSheet({ student, subjects, marks, examType, id }: 
       </div>
 
       {/* Signatures */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '24px', fontSize: '11px' }}>
-        {['শ্রেণি শিক্ষকের স্বাক্ষর ও তারিখ', 'প্রধান শিক্ষকের স্বাক্ষর ও তারিখ'].map(s => (
-          <div key={s} style={{ textAlign: 'center' }}>
-            <div style={{ width: '140px', borderTop: '1px solid #1f2937', margin: '0 auto 4px' }} />
-            {s}
-          </div>
-        ))}
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '60px', fontSize: '11px' }}>        {['শ্রেণি শিক্ষকের স্বাক্ষর ও তারিখ', 'প্রধান শিক্ষকের স্বাক্ষর ও তারিখ'].map(s => (
+        <div key={s} style={{ textAlign: 'center' }}>
+          <div style={{ width: '140px', borderTop: '1px solid #1f2937', margin: '0 auto 4px' }} />
+          {s}
+        </div>
+      ))}
       </div>
     </div>
   );
